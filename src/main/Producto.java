@@ -10,13 +10,13 @@ package main;
  * @author equipo
  */
 public class Producto {
-   //private String codigo; 
+   private int codigo; 
     private String nombre; 
     private String marca; 
     private double precio;
     private int cantidad; 
 
-    public Producto(/*String codigo,*/ String nombre,String marca, double precio, int cantidad) {
+    public Producto(int codigo, String nombre,String marca, double precio, int cantidad) {
        // this.codigo = codigo;
         this.nombre = nombre;
         this.marca= marca; 
@@ -48,6 +48,18 @@ public class Producto {
 
     public void setPrecio(double precio) {
         this.precio = precio;
+    }
+
+    public String getMarca() {
+        return marca;
+    }
+
+    public int getCantidad() {
+        return cantidad;
+    }
+
+    public int getCodigo() {
+        return codigo;
     }
     
     

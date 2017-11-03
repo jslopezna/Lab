@@ -26,10 +26,10 @@ public class Inventario {
     
     public void addProduct( int codigo,String nombre,String marca, double precio, int cantidad){
         //String producto= null; 
-        Producto producto = new Producto(nombre,marca, precio, cantidad); 
+        Producto producto = new Producto(codigo,nombre,marca, precio, cantidad); 
         String sc =codigo+nombre+"  Marca:"+marca+"  Precio=$" +precio+"  Cantidad=" +cantidad+"und."+"\n";
           
-        this.productos.add(sc);
+        this.productos.add(producto);
         
     }
     public void ModificarEstadoProducto(int codigo, String nombre,String marca, double precio,int cantidad){
@@ -50,9 +50,9 @@ public class Inventario {
     }
      public void VisualizarInventario( ){
          
+         for(int i= 0; i<=this.productos.size();i++){
         
-         System.out.println(" "+this.productos);
-         
+         System.out.println( " "+ this.productos.get(i).getCodigo()+this.productos.get(i).getNombre()+"  Marca"+this.productos.get(1).getMarca()+"  Precio= $"}
         /* Set set = productos.entrySet();
       Iterator iterator = set.iterator();
       while(iterator.hasNext()) {
