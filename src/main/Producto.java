@@ -17,7 +17,7 @@ public class Producto {
     private int cantidad; 
 
     public Producto(int codigo, String nombre,String marca, double precio, int cantidad) {
-       // this.codigo = codigo;
+        this.codigo = codigo;
         this.nombre = nombre;
         this.marca= marca; 
         this.precio = precio;
@@ -61,6 +61,11 @@ public class Producto {
     public int getCodigo() {
         return codigo;
     }
+
+    public void setCantidad(int cantidad) {
+        this.cantidad = cantidad;
+    }
+    
     
     
 
